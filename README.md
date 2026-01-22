@@ -185,7 +185,7 @@ python sample_all.py
 @article{
     author    = {Bo Yang, Zhaohui Jiang, Dong Pan, Zhiping Lin, and Weihua Gui},
     title     = {MOFM: A Multiple-in-One Flow Mamba for Unregistered Multi-Modal Image Fusion},
-    booktitle = {IEEE Transactions on Circuits and Systems for Video Technology},
+    booktitle = {-},
     year      = {-},
     pages     = {-},
     doi       = {-},
