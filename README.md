@@ -158,7 +158,7 @@ train
 
 ```
 ### 4. Start training
-You can use the Dollowing code to train the LFDT-Fusion model for different fusion tasks.
+You can use the Dollowing code to train the MOFM model for different fusion tasks.
 ```
 torchrun  --nproc_per_node=3 --master_port=29600 train.py --task VI-NIR  --batch_size 14 --img_size 256  --net CrossBC
 ```
