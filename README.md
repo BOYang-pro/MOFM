@@ -2,8 +2,8 @@
 Code implementation of "MOFM: A Multiple-in-One Flow Mamba for Unregistered Multi-Modal Image Fusion"
 
 ## Update
-- [2025/8] All code will be open after acceptance.
-- ....
+- [2026/5] The code is being refactored...
+- .....
 ## Framework
 
 ## Environment
@@ -185,9 +185,9 @@ python sample_all.py
 @article{
     author    = {Bo Yang, Zhaohui Jiang, Dong Pan, Zhiping Lin, and Weihua Gui},
     title     = {MOFM: A Multiple-in-One Flow Mamba for Unregistered Multi-Modal Image Fusion},
-    booktitle = {-},
-    year      = {-},
-    pages     = {-},
-    doi       = {-},
+    booktitle = {IEEE Transactions on Circuits and Systems for Video Technology},
+    year      = {2026},
+    pages     = {1-1},
+    doi       = {10.1109/TCSVT.2026.3681540},
 }
 ```
