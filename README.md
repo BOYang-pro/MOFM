@@ -33,7 +33,7 @@ Note that you can download 'selective_scan-0.0.2-cp310-cp310-linux_x86_64.whl' f
 ## Test
 You can directly test our model to generate fused images using the following code (note: the pre-training weights sholud be saved in the './check/' file)
 
-Link：
+Link： [checkpoint](https://drive.google.com/drive/folders/15oAuvq1k3AqGHkzx1MNh6x2oThXksFb3?usp=drive_link)
 
 ```
 #Visible and infrared image fusion
