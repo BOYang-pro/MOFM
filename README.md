@@ -108,9 +108,9 @@ Run the following command to generate datasets under **TPS** or **Fisheye** defo
 ```
 cd Data_generate 
 
-python generate_Fisheye_dataset.py
+python generate_Fisheye_dataset.py --image_root ./data/ --save_root ./Fisheye/ --image_size 512
 
-python generate_tps_dataset.py
+python generate_tps_dataset.py --image_root ./data/ --save_root ./TPS/ --image_size 512
 ```
 
 ### 3 Data format
