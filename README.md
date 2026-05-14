@@ -88,6 +88,7 @@ This subsection provides tools to generate training and testing datasets with va
 Run the following command to generate datasets under **homography**, **affine**, or **elastic** deformations:
 ```
 cd Data_generate
+export PYTHONPATH=$PYTHONPATH:$(pwd)/..
 
 # Homography
 python generate_warp_dataset.py --image_root ./data/ --save_root ./hom/ --image_size 512 --transform_type hom
