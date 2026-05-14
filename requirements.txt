@@ -1,0 +1,13 @@
+numpy==1.26.3
+matplotlib==3.10.0
+dominate==2.9.1
+opencv-python==4.10.0.84
+mmengine==0.10.5
+einops==0.8.0
+timm==0.4.12
+causal-conv1d==1.5.0.post8
+mamba-ssm==1.0.1
+numpy-hilbert-curve==1.0.1
+pyzorder==0.0.2
+scipy==1.15.2
+imageio==2.36.1
