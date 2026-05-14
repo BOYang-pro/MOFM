@@ -1,0 +1,64 @@
+{
+    "name": "fusion",
+    "phase": "train",
+    "gpu_ids": [5,9],
+    "distributed": true,
+    "display_port": 8097,
+    "path": {
+        "log": "logs",
+        "tb_logger": "tb_logger",
+        "results": "results",
+        "checkpoint": "checkpoint",
+        "resume_state": null 
+    },
+    "datasets": {
+        "centered": true,
+        "train": {
+            "name": "reg",
+            "crop_size": 256,
+            "dataroot_ir_tps": "./",
+            "dataroot_ir_hom": "./",
+            "dataroot_ir_elastic": "./",
+            "dataroot_nir_fisher": "./",
+            "dataroot_nir_affine": "./",          
+            "dataroot_med_pet": "./",
+            "dataroot_med_ct": "./",
+            "batch_size": 6,                                        
+            "num_workers":6,
+            "use_shuffle": false,
+            "is_crop"    : false
+        }
+    },
+    "model": {
+        "task": "VI-IR",
+        "feat": {
+            "img_size": 256,
+            "in_channel": 1,
+            "embed_dim": 32,
+            "patch_size": 4,
+            "depth": 4,
+            "d_state": 4
+        }  
+    },
+    "train": {
+        "n_epoch": 603,
+        "epoch_gap": 361,
+        "epoch_gap2": 481,
+        "val_freq": 2,
+        "save_checkpoint_epoch": 300,
+        "print_freq": 2,
+        "ema_decay": 0.999,
+        "warmup_iter": -1,
+        "scheduler":{
+            "type": "CosineAnnealingRestartCyclicLR",
+            "periods": [90,90,90,91,60,181],
+            "restart_weights": [1,1,0.5,0.5,1,0.5],
+            "eta_mins": [0.0003, 0.00003, 0.00001, 0.00001, 0.00003, 0.00001]
+        },
+        "optimizer": {
+            "type": "AdamW",
+            "lr": 3e-4,
+            "weight_decay": 1e-4
+        }
+    }
+}
