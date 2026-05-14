@@ -90,13 +90,13 @@ Run the following command to generate datasets under **homography**, **affine**,
 cd Data_generate
 
 # Homography
-python generate_warp_dataset.py --image_size 512 --transform_type hom
+python generate_warp_dataset.py --image_root ./data/ --save_root ./hom/ --image_size 512 --transform_type hom
 
 # Affine
-python generate_warp_dataset.py --image_size 512 --transform_type affine
+python generate_warp_dataset.py --image_root ./data/ --save_root ./affine/ --image_size 512 --transform_type affine
 
 # Elastic
-python generate_warp_dataset.py --image_size 512 --transform_type elastic
+python generate_warp_dataset.py --image_root ./data/ --save_root ./elastic/ --image_size 512 --transform_type elastic
 ```
 ⚠ Adjust the parameters to control the strength and scale of the deformation.
 
