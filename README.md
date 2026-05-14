@@ -159,7 +159,16 @@ train
 │   ├──pet_warp                                   
 │   │   ├──0000.png                            
 ... 
-
+```
+It is worth noting that the corresponding dataset paths must be specified in the train_2D.json file prior to training:
+```
+"dataroot_ir_tps": "",
+"dataroot_ir_hom": "",
+"dataroot_ir_elastic": "",
+"dataroot_nir_fisher": "",
+"dataroot_nir_affine": "",
+"dataroot_med_pet": "",
+"dataroot_med_ct": ""
 ```
 ### 4. Start training
 You can use the Dollowing code to train the MOFM model for different fusion tasks.
