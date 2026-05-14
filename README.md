@@ -26,7 +26,7 @@ conda install nvidia/label/cuda-11.8.0::cuda-cudart-dev
 conda install nvidia/label/cuda-11.8.0::libcusparse-dev  
 conda install nvidia/label/cuda-11.8.0::libcublas-dev  
 conda install nvidia/label/cuda-11.8.0::libcusolver-dev  
-cd kernels/selective_scan && pip install .
+pip install selective_scan-0.0.2-cp310-cp310-linux_x86_64.whl
 pip install -r requirements.txt
 ```
 ## Test
