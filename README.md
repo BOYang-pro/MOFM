@@ -163,7 +163,7 @@ train
 ### 4. Start training
 You can use the Dollowing code to train the MOFM model for different fusion tasks.
 ```
-torchrun  --nproc_per_node=3 --master_port=29600 train.py --task VI-NIR  --batch_size 14 --img_size 256  --net CrossBC
+torchrun  --nproc_per_node=3 --master_port=29600 train.py --task VI-NIR  --batch_size 14 --img_size 256 
 ```
 * nproc_per_node: This parameter represents the number of GPU. （Note: If you want to change nproc_per_node, the device number of "gpu_ids" in the configuration file './config/train.json' needs to be changed as well. For example, if nproc_per_node=2, gpu_ids=[0,1].）
 
@@ -175,7 +175,6 @@ torchrun  --nproc_per_node=3 --master_port=29600 train.py --task VI-NIR  --batch
 
 * img_size: This parameter represents the image size.
 
-* net: This parameter represents a model network, which defaults to a CrossBC network.
 
 If you want to train three fusion tasks at once, you can also run the following code:
 
