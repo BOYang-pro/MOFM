@@ -2,8 +2,6 @@
 Code implementation of "MOFM: A Multiple-in-One Flow Mamba for Unregistered Multi-Modal Image Fusion"
 
 
-## Framework
-
 ## Environment
 
 We test the code on PyTorch 2.1.1 + CUDA 11.8.
