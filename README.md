@@ -37,7 +37,9 @@ Link： [checkpoint](https://drive.google.com/drive/folders/15oAuvq1k3AqGHkzx1MN
 
 ```
 #Visible and infrared image fusion
-python test-ir.py
+python test-ir_elastic.py
+
+python test-ir_hom_tps.py
 
 #Visible and near-infrared image fusion
 python test-nir.py
